@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #62b8f5, #4475ef)
+}
+
+.heading {
+    color: rgb(34, 44, 117);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+    /* font-size: 20px; */
+    color: rgb(54, 13, 93);
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem 1.8rem;
+    border-radius: 10px;
+}
+
+.search-container {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.3rem;
+}
+
+.search-container input,
+.search-container button {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.search-container input {
+    font-size: 20px;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-bottom: 2.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.search-container input::placeholder {
+    color: #e5e5e5;
+}
+
+.search-container input::focus {
+    color: white;
+    border-radius: 5px;
+}
+
+.search-container button {
+    font-size: 17px;
+    cursor: pointer;
+    background-color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 25px 0px;
+    text-align: center;
+}
+
+.weather,
+.description {
+    color: white;
+    margin: 8px 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+#result h1 {
+    font-size: 55px;
+    font-weight: 400;
+    color: white;
+}
+
+#result img {
+    width: 90px;
+}
+
+.temp-container {
+    display: flex;
+    justify-content: center;
+}
+
+.temp-container div {
+    padding: 20px;
+}
+
+.temp-container .title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.temp-container .temp {
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+.errmsg {
+    color: rgb(175, 49, 49);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .heading{
+        font-size: 40px;
+    }
+    .search-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-container button{
+        padding: 6px;
+    }
+}
